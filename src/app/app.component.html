@@ -1,3 +1,40 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+    <ion-menu menuId="main-menu" contentId="main">
+        <ion-content>
+            <div class="menu-header-bg">Menu</div>
+            <div class="header-content">
+                <img src="../assets/images/fotoPerfil.jpg" alt="">
+                <ion-label>
+                    <h2>Nombre useuario</h2>
+                    <p>Desarrollor</p>
+                </ion-label>
+            </div>
+            <div class="action-button">
+                <ion-button>
+                    <ion-icon slot="start" name="add"></ion-icon>
+                    Opcion undo
+                </ion-button>
+            </div>
+            <ion-list class="menu-items" lines="none">
+                <ion-menu-toggle auto-hide="true">
+                    <ion-item class="active">
+                        <ion-icon name="pie-chart-outline"></ion-icon>Dashboard
+                    </ion-item>
+                </ion-menu-toggle>
+                <ion-item>
+                    <ion-icon name="pie-chart-outline"></ion-icon>Dashboard
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="pie-chart-outline"></ion-icon>Dashboard
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="pie-chart-outline"></ion-icon>Dashboard
+                </ion-item>
+                <ion-item>
+                    <ion-icon name="exit-outline"></ion-icon>logout
+                </ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
